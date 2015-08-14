@@ -1,0 +1,13 @@
+{
+  "name": "mylogger",
+  "version": "1.0.3",
+  "description": "logging based on console",
+  "main": "main.js",
+  "keywords": [
+    "logger",
+    "console"
+  ],
+ "readmeFilename": "README.md",
+  "author": "Shambhulal Verma <vermaslal@gmail.com>",
+  "license": "NONE"
+}
