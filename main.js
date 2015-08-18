@@ -13,7 +13,7 @@ Logger.prototype.createFunction=function(key){
 			if(self.excludes.indexOf(levels[key])==-1){
 				var l=levels[key].toUpperCase()
 				var td = new Date();
-				var strDate = td.getFullYear() + "-" + td.getMonth() + 1 + "-" + td.getDate() + " " +td.getHours()+":"+td.getMinutes()+":"+td.getSeconds();
+				var strDate = td.getFullYear() + "-" + (td.getMonth() + 1) + "-" + td.getDate() + " " +td.getHours()+":"+td.getMinutes()+":"+td.getSeconds();
 				console.log(strDate+" ["+l+"] "+str)	
 			}
 		}
