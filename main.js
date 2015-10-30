@@ -13,7 +13,7 @@ Logger.prototype.createFunction = function (key) {
     if (self.excludes.indexOf(levels[key]) === -1) {
       var l = levels[key].toUpperCase();
       var strDate = new Date().toISOString().substr(0, 19).replace('T', ' ');
-      console.log(strDate + " [" + l + "] " + str);
+        console.log(strDate + " [" + l + "] ", str);
     }
   }
 }
