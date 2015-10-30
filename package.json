@@ -1,6 +1,6 @@
 {
   "name": "mylogger",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "logging based on console",
   "main": "main.js",
   "keywords": [
