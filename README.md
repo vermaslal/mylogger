@@ -15,9 +15,6 @@ This module enables you to create logging based on console
 	logger.log("Hello World!", 'world');
 ## Output ##
 
-2015-11-26 15:24:02 [INFO] iiiiiiii { txt: [ 'dummy' ] } world
-2015-11-26 15:24:02 [ERROR] EEEEE world
-2015-11-26 15:24:02 [WARN] ww world
-
-
- 
+    2015-11-26 15:24:02 [INFO] iiiiiiii { txt: [ 'dummy' ] } world
+    2015-11-26 15:24:02 [ERROR] EEEEE world
+    2015-11-26 15:24:02 [WARN] ww world
