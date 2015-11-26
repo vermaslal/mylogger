@@ -1,3 +1,4 @@
+'use-strict';
 var levels = ['log', 'debug', 'info', 'notice', 'warn', 'error'];
 var Logger = function () {
   this.loglevel = 0;
