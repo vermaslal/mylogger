@@ -1,34 +1,41 @@
 {
-  "name": "mylogger",
-  "version": "1.0.7",
-  "description": "logging based on console",
-  "main": "main.js",
-  "keywords": [
-    "logger",
-    "console"
-  ],
-  "maintainers": [
-    {
-      "name": "shambhu",
-      "email": "vermaslal@gmail.com"
-    }
-  ],
-  "homepage": "https://github.com/vermaslal/mylogger",
+  "author": {
+    "email": "vermaslal@gmail.com",
+    "name": "Shambhulal Verma"
+  },
   "bugs": {
-    "url": "https://github.com/vermaslal/mylogger/issues",
-    "email": "vermaslal@gmail.com"
+    "email": "vermaslal@gmail.com",
+    "url": "https://github.com/vermaslal/mylogger/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/vermaslal/mylogger.git"
-  },
+  "dependencies": {},
+  "description": "logging based on console",
+  "devDependencies": {},
+  "directories": {},
+  "homepage": "https://github.com/vermaslal/mylogger",
+  "keywords": [
+    "console",
+    "logger"
+  ],
+  "license": "NONE",
   "licenses": [
     {
       "type": "MIT",
       "url": "https://github.com/vermaslal/mylogger/blob/master/LICENCE"
     }
   ],
-  "readmeFilename": "README.md",
-  "author": "Shambhulal Verma <vermaslal@gmail.com>",
-  "license": "NONE"
+  "main": "main.js",
+  "maintainers": [
+    {
+      "name": "vermaslal",
+      "email": "vermaslal@gmail.com"
+    }
+  ],
+  "name": "mylogger",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vermaslal/mylogger.git"
+  },
+  "scripts": {},
+  "version": "1.0.8"
 }
