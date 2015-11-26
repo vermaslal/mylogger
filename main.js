@@ -11,9 +11,12 @@ Logger.prototype.createFunction = function (key) {
   var self = this;
   this[levels[key]] = function (str) {
     if (self.excludes.indexOf(levels[key]) === -1) {
+      var ar = Array.prototype.slice.call(arguments);
       var l = levels[key].toUpperCase();
-      var strDate = new Date().toISOString().substr(0, 19).replace('T', ' ');
-        console.log(strDate + " [" + l + "] ", str);
+      var strDate = self.formatDate(new Date);
+      ar.unshift("[" + l + "]");
+      ar.unshift(strDate);
+      console.log.apply(console, ar);
     }
   }
 }
@@ -23,6 +26,17 @@ Logger.prototype.setLevel = function (level) {
       this.excludes.push(levels[i]);
     }
   }
+};
+Logger.prototype.formatDate = function (d) {
+  function pad(n) {
+    return n < 10 ? '0' + n : n;
+  }
+  return d.getFullYear() + '-' +
+          pad(d.getMonth() + 1) + '-' +
+          pad(d.getDate()) + ' ' +
+          pad(d.getHours()) + ':' +
+          pad(d.getMinutes()) + ':' +
+          pad(d.getSeconds());
 };
 
 module.exports = new Logger();
