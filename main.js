@@ -1,11 +1,11 @@
 'use-strict';
 var levels = ['log', 'debug', 'info', 'notice', 'warn', 'error'];
+var util = require('util');
 var fs = require('fs');
 var Logger = function () {
     this.loglevel = 0;
     this.excludes = [];
     this.fName = null;
-    var self = this;
     for (var key in levels) {
         this.createFunction(key);
     }
@@ -15,7 +15,12 @@ Logger.prototype.writeLog = function (arr) {
     if (this.fPath === null) {
         console.log.apply(console, arr);
     } else {
-        this.fileWs.write(arr.join('') + '\r\n');
+        this.fileWs.write(arr.map(function (elm) {
+            if (typeof (elm) !== 'object') {
+                return elm;
+            }
+            return util.inspect(elm);
+        }).join(' ') + '\r\n');
     }
 }
 Logger.prototype.createFunction = function (key) {
