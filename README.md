@@ -7,7 +7,8 @@ This module enables you to create logging based on console
 ## Input ##
 	// Patch console.x methods in order to add timestamp information
 	var logger = require("mylogger");
-	logger.setLevel('debug');
+	logger.setLevel('debug');// either of 'log', 'debug', 'info', 'notice', 'warn', 'error'
+	logger.setLogPath('/var/log/testLog.txt'); //optional, if not set it will pipe to stdout
 	logger.log("Hello", 'world');
 	logger.info("iiiiiiii", {txt: ['dummy']}, 'world');
 	logger.error("EEEEE", 'world')
