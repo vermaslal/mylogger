@@ -5,7 +5,7 @@ var fs = require('fs');
 var Logger = function () {
     this.loglevel = 0;
     this.excludes = [];
-    this.fName = null;
+    this.fPath = null;
     for (var key in levels) {
         this.createFunction(key);
     }
