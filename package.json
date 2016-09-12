@@ -11,10 +11,13 @@
   "description": "logging based on console",
   "devDependencies": {},
   "directories": {},
-  "homepage": "https://github.com/vermaslal/mylogger",
+  "homepage": "https://vermaslal.github.io/mylogger/",
   "keywords": [
     "console",
-    "logger"
+    "logger",
+    "mylogger",
+    "nodejs logger",
+    "logging"
   ],
   "license": "NONE",
   "licenses": [
