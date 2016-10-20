@@ -2,6 +2,10 @@
 
 This module enables you to create logging based on console
 
+# Setting up
+
+	npm install mylogger
+
 # Usage
 
 ## Input ##
